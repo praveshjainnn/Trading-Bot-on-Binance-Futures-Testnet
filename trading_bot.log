@@ -1,0 +1,29 @@
+2026-06-08 12:39:30 | INFO     | trading_bot | [client.py:35] | Initializing in DRY-RUN mode. No orders will be executed on the exchange.
+2026-06-08 12:39:30 | INFO     | trading_bot | [orders.py:24] | Validation passed: BUY 0.005 BTCUSDT MARKET
+2026-06-08 12:39:30 | INFO     | trading_bot | [orders.py:46] | Submitting request to exchange: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.005}
+2026-06-08 12:39:30 | INFO     | trading_bot | [client.py:196] | [DRY-RUN] Intercepted POST request to /fapi/v1/order
+2026-06-08 12:39:31 | INFO     | trading_bot | [orders.py:66] | Order executed successfully. ID: 987654321, Status: FILLED
+2026-06-08 12:39:46 | INFO     | trading_bot | [client.py:35] | Initializing in DRY-RUN mode. No orders will be executed on the exchange.
+2026-06-08 12:39:46 | INFO     | trading_bot | [orders.py:24] | Validation passed: BUY 0.005 BTCUSDT MARKET
+2026-06-08 12:39:46 | INFO     | trading_bot | [orders.py:46] | Submitting request to exchange: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.005}
+2026-06-08 12:39:46 | INFO     | trading_bot | [client.py:196] | [DRY-RUN] Intercepted POST request to /fapi/v1/order
+2026-06-08 12:39:47 | INFO     | trading_bot | [orders.py:66] | Order executed successfully. ID: 987654321, Status: FILLED
+2026-06-08 12:39:53 | INFO     | trading_bot | [client.py:35] | Initializing in DRY-RUN mode. No orders will be executed on the exchange.
+2026-06-08 12:39:53 | INFO     | trading_bot | [orders.py:24] | Validation passed: BUY 0.005 BTCUSDT LIMIT
+2026-06-08 12:39:53 | INFO     | trading_bot | [orders.py:46] | Submitting request to exchange: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.005, 'price': 62500.0}
+2026-06-08 12:39:53 | INFO     | trading_bot | [client.py:196] | [DRY-RUN] Intercepted POST request to /fapi/v1/order
+2026-06-08 12:39:53 | INFO     | trading_bot | [orders.py:66] | Order executed successfully. ID: 987654321, Status: NEW
+2026-06-08 12:39:58 | INFO     | trading_bot | [client.py:35] | Initializing in DRY-RUN mode. No orders will be executed on the exchange.
+2026-06-08 12:39:58 | INFO     | trading_bot | [orders.py:24] | Validation passed: SELL 0.05 ETHUSDT STOP_MARKET
+2026-06-08 12:39:58 | INFO     | trading_bot | [orders.py:46] | Submitting request to exchange: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.05, 'trigger_price': 3450.0}
+2026-06-08 12:39:58 | INFO     | trading_bot | [client.py:196] | [DRY-RUN] Intercepted POST request to /fapi/v1/algoOrder
+2026-06-08 12:39:58 | INFO     | trading_bot | [orders.py:66] | Order executed successfully. ID: 1234567, Status: ACCEPTED
+2026-06-08 12:44:16 | INFO     | trading_bot | [client.py:37] | Initializing Binance Futures Client on: https://testnet.binancefuture.com
+2026-06-08 12:44:16 | DEBUG    | trading_bot | [client.py:46] | Sending request: GET https://testnet.binancefuture.com/fapi/v1/time
+2026-06-08 12:44:16 | INFO     | trading_bot | [client.py:55] | Time synced. Server offset: -1383ms
+2026-06-08 12:44:16 | INFO     | trading_bot | [orders.py:24] | Validation passed: BUY 2.0 BTCUSDT MARKET
+2026-06-08 12:44:16 | INFO     | trading_bot | [orders.py:46] | Submitting request to exchange: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2026-06-08 12:44:16 | DEBUG    | trading_bot | [client.py:99] | Request: POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '2.0', 'timestamp': 1780902855456, 'signature': '374eb35d5dd34410a13837d83776674bfa3ca167a38a2d0912943d60a4fd59f5'} | Headers: {'X-MBX-APIKEY': '...y_here'}
+2026-06-08 12:44:17 | DEBUG    | trading_bot | [client.py:110] | Response Status Code: 401
+2026-06-08 12:44:17 | ERROR    | trading_bot | [client.py:125] | Binance API Error: Code -2014 | Message: API-key format invalid.
+2026-06-08 12:44:17 | ERROR    | trading_bot | [orders.py:76] | Exchange returned error: BinanceAPIException(code=-2014): API-key format invalid.
